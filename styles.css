@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Figtree';
-    src: url('/assets/fonts/Figtree-VariableFont_wght.ttf') format('truetype');
-    font-weight: 500 800;
+    src: url('../assets/fonts/Figtree-VariableFont_wght.ttf') format('truetype');
+    font-weight: 500 950;
     font-style: normal;
     font-display: swap;
 }
@@ -28,6 +28,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: 500;
 }
 
 .card {
@@ -37,6 +38,7 @@ body {
     border-radius: 1rem;
     border: 1px solid var(--gray950);
     box-shadow: 0.5rem 0.5rem 0 0 var(--gray950);
+    text-decoration: none;
 }
 
 .imgcontainer {
@@ -60,21 +62,19 @@ p {
 
 h1 {
     font-size: clamp(20px, 2.5vw, 1.5rem);
-    font-weight: 800;
+    color: var(--gray950);
     margin: 1rem 0;
 }
 
 a {
-    color: var(--gray950);
     text-decoration: none;
 }
 
-a:hover {
+a:hover h1 {
     color: var(--yellow);
 }
 
 .learning {
-    font-weight: 800;
     background-color: var(--yellow);
     display: inline-block;
     border-radius: 0.3rem;
@@ -83,7 +83,6 @@ a:hover {
 }
 
 .date {
-    font-weight: 500;
     margin-top: 1rem;
 }
 
@@ -96,12 +95,15 @@ a:hover {
     display: flex;
     align-items: center;
     gap: 1rem;
-    font-weight: 800;
     margin-top: 1.5rem;
 }
 
 .user img {
     width: 2rem;
+}
+
+.heavy {
+    font-weight: 950;
 }
 
 /*            Card & illustration adjustments for larger screens           */
