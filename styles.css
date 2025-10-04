@@ -106,14 +106,11 @@ a:hover h1 {
     font-weight: 950;
 }
 
-/*            Card & illustration adjustments for larger screens           */
+/*            Card size scaling for larger screens           */
 
 @media only screen and (min-width: 576px) {
     .card {
-        max-width: 384px;
-    }
-
-    .illustration {
-        width: 100%;
+        /* max-width: 384px; */
+        max-width: clamp(320px, 38vw, 384px);
     }
 }
