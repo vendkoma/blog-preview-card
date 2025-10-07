@@ -100,6 +100,7 @@ a:hover h1 {
 
 .user img {
     width: 2rem;
+    height: auto;
 }
 
 .heavy {
